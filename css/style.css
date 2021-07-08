@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-Black"), local("Roboto-Black"), url("../fonts/Roboto-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto-Bold"), local("Roboto-Bold"), url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  height: 100%;
+  font-family: Roboto;
+  background-color: #141825;
+}
+
+.wrap {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 10px;
+  flex: 1 1 auto;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/**
+ * Сброс стилей
+ **/
+button {
+  cursor: pointer;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: inherit;
+}
+
+article, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+input {
+  outline: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+.fullscreen-block {
+  min-height: 100vh;
+  position: relative;
+}
+
+.header {
+  margin-top: 19px;
+}
+
+.header-logoSelect {
+  display: flex;
+}
+
+.header-logoSelect__logo {
+  flex: 0 1 142px;
+  min-height: 95px;
+}
+
+.header-logoSelect__imgLogo {
+  max-width: 100%;
+}
+
+.img-wall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 1343px;
+  height: 100%;
+}
+
+.img-wall img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-stadium {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../images/backgrStadium.png") no-repeat center/cover;
+}
+
+.img-shadowRight {
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+}
+
+.img-neon {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: 1;
+}
+
+.img-coin {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.img-shadowCenter {
+  position: absolute;
+  bottom: 19%;
+  left: 0;
+}
