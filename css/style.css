@@ -112,15 +112,138 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 .header-logoSelect {
   display: flex;
+  align-items: center;
 }
 
 .header-logoSelect__logo {
   flex: 0 1 142px;
   min-height: 95px;
+  margin-right: 60px;
 }
 
 .header-logoSelect__imgLogo {
   max-width: 100%;
+}
+
+.header-logoSelect-select {
+  flex: 0 0 75px;
+  position: relative;
+}
+
+.header-logoSelect-label {
+  display: flex;
+  padding: 8px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header-logoSelect-label::after {
+  position: absolute;
+  content: '';
+  background: #fff;
+  opacity: 0.05;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 6px;
+}
+
+.header-logoSelect-label__name {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+
+.header-logoSelect-label__arrImg {
+  width: 0;
+  height: 0;
+  margin-top: 2px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #C4C4C4;
+  transition: 0.2s ease all;
+}
+
+.header-logoSelect-label__arrImg.active {
+  transform: rotate(180deg);
+  transition: 0.2s ease all;
+}
+
+.header-logoSelect-label__img {
+  width: 20px;
+  height: 20px;
+}
+
+.header-logoSelect-label__img img {
+  max-width: 100%;
+}
+
+.header-logoSelect-label--brNo.header-logoSelect-label::after {
+  border-radius: 6px 6px 0 0;
+}
+
+.header-logoSelect-lang {
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s ease all;
+  bottom: -28px;
+  z-index: 1;
+  width: 75px;
+}
+
+.header-logoSelect-lang::after {
+  content: '';
+  background: #fff;
+  opacity: 0.05;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 6px 6px;
+}
+
+.header-logoSelect-lang__label {
+  padding: 0 8px 8px;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.header-logoSelect-lang__img {
+  flex: 0 0 20px;
+  height: 20px;
+  margin-right: 7px;
+}
+
+.header-logoSelect-lang__img img {
+  max-width: 100%;
+}
+
+.header-logoSelect-lang__name {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+
+.header-logoSelect-lang--close {
+  transition: 0.3s ease all;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .img-wall {
@@ -169,4 +292,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   position: absolute;
   bottom: 19%;
   left: 0;
+}
+
+.header-logoSelect-label:hover .header-logoSelect-label__name {
+  color: #00B0D6;
+}
+
+.header-logoSelect-label:hover .header-logoSelect-label__arrImg {
+  border-top: 4px solid #00B0D6;
+}
+
+.header-logoSelect-lang__label:hover .header-logoSelect-lang__name {
+  color: #00B0D6;
 }
