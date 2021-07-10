@@ -455,6 +455,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 .block-content-rules {
   display: flex;
+  margin-bottom: 59px;
 }
 
 .block-content-rules-left {
@@ -557,6 +558,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   cursor: pointer;
 }
 
+.block-content-rules-left-slider__arr:hover {
+  background-color: #00B0D6;
+}
+
 .block-content-rules-left-slider__arr span {
   display: block;
   border-left: 4px solid transparent;
@@ -650,4 +655,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   height: 60px;
   background: radial-gradient(53.83% 53.46% at 50% 50%, rgba(0, 176, 214, 0.4) 0%, rgba(0, 176, 214, 0) 100%);
   opacity: 0.65;
+}
+
+.block-content-rules-ruleBtn {
+  display: inline-block;
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #00B0D6;
+  position: relative;
+}
+
+.block-content-rules-ruleBtn::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #00B0D6;
+  bottom: -3px;
+  right: 0;
+  opacity: 0.15;
+  transition: 0.3s ease all;
+}
+
+.block-content-rules-ruleBtn:hover {
+  transition: 0.3s ease all;
+}
+
+.block-content-rules-ruleBtn:hover::after {
+  opacity: 1;
+}
+
+.block-content-rules-ruleBtn:hover span {
+  color: #fff;
 }
