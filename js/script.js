@@ -20,4 +20,35 @@ document.addEventListener('DOMContentLoaded', function(){
 }
 
 select('.header-logoSelect-label', '.header-logoSelect-lang','.header-logoSelect-label__arrImg');
+    const modal = (shadow,btnStart,btnClose,mainModal) => {
+    const modal = document.querySelector(shadow),
+          start = document.querySelector(btnStart),
+          close = document.querySelector(btnClose),
+          main = document.querySelector(mainModal),
+          body = document.body
+
+    modal.addEventListener('click', (e) => {
+        if(e.target.classList.contains('shadow-modal__wrap')){
+            modal.classList.remove('show')    
+            main.classList.remove('show')
+            body.style.overflow = 'auto'    
+        }
+    })
+
+    close.addEventListener('click', () => {
+        modal.classList.remove('show')    
+        main.classList.remove('show')
+        body.style.overflow = 'auto'    
+    })
+
+    start.addEventListener('click', (e) => {
+        e.preventDefault()
+        modal.classList.add('show')
+        main.classList.add('show')
+        body.style.overflow = 'hidden'
+    })
+
+    
+}
+modal('.shadow-modal','.block-content-rules-ruleBtn','.modal__close','.modal');
 })

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>KingoBingo</title>
 </head>
 <body>
     <div class="wrap">
@@ -16,24 +16,75 @@
                         <a class="header-logoSelect__logo" href="index.html">
                             <img class="header-logoSelect__imgLogo" src="images/logo.svg" alt="logo">
                         </a>
-                        <form class="header-logoSelect-select" action="#">
+                        <div class="header-logoSelect-select">
                             <a href="#" class="header-logoSelect-label">
                                 <div class="header-logoSelect-label__img">
-                                    <img src="images/en.svg" alt="ru">
+                                    <img src="images/en.svg" alt="en">
                                 </div>
                                 <span class="header-logoSelect-label__name">en</span>
                                 <div class="header-logoSelect-label__arrImg"></div>
                             </a>
                             <div class="header-logoSelect-lang header-logoSelect-lang--close ">
                                 <a href="index.html" class="header-logoSelect-lang__label">
-                                    <div class="header-logoSelect-lang__img">
+                                    <div class="header-logoSelect-lang__img enImg">
                                         <img src="images/ru.svg" alt="ru">
                                     </div>
                                     <span class="header-logoSelect-lang__name">ru</span>
                                 </a>
+                                <a href="tr.html" class="header-logoSelect-lang__label tr">
+                                    <div class="header-logoSelect-lang__img trImg">
+                                        <img src="images/tr.svg" alt="tr">
+                                    </div>
+                                    <span class="header-logoSelect-lang__name">tr</span>
+                                </a>
                             </div>
-                        </form>
+                        </div>
                     </div>
+                    <a class="btn-registration" href="#">Регистрация</a>
+                </div>
+                <div class="block-content">
+                    <div class="block-content-firstDeposit">
+                        <div class="block-content-firstDeposit__img">
+                            <img src="images/hundred.svg" alt="hundred">
+                        </div>
+                        <div class="block-content-firstDeposit__txt">
+                            <span class="your" >на твой</span> <span class="first">первы</span><span class="word">й</span> <span class="dep">Депозит</span>
+                        </div>
+                    </div>
+                    <div class="block-content-rules">
+                        <div class="block-content-rules-left">
+                            <div class="block-content-rules-left__title">
+                                <span>Основные</span> условия акции
+                            </div>
+                            <div class="block-content-rules-left-slider">
+                                <div class="block-content-rules-left-slider__item">
+                                    <div class="block-content-rules-left-slider__iconArr">
+                                        <div class="block-content-rules-left-slider__icon">
+                                            <img src="images/register.svg" alt="register">
+                                            <span></span>
+                                        </div>
+                                        <div class="block-content-rules-left-slider__arrows">
+                                            <div class="block-content-rules-left-slider__arrLeft block-content-rules-left-slider__arr">
+                                                <span></span>
+                                            </div>
+                                            <div class="block-content-rules-left-slider__arrRight block-content-rules-left-slider__arr">
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-content-rules-right">
+                            <div class="block-content-rules-right__wrap">
+                                <div class="block-content-rules-right__desc">
+                                    Выбери свое направление и получи бонус на <span>спорт</span> или <span class="casino">казино</span>
+                                </div>
+                            </div>
+                            <a class="block-content-rules-right__btn" href="#">получи бонус</a>
+                        </div>
+                    </div>
+                    <a class="block-content-rules-ruleBtn" href="#">Все правила акции <span>>></span></a>
                 </div>
             </div>
             <div class="img-wall">
@@ -43,14 +94,49 @@
             <div class="img-shadowRight">
                 <img src="images/shadowRight.png" alt="shadowRight">
             </div>
-            <div class="img-neon">
+            <!-- <div class="img-neon">
                 <img src="images/neon.png" alt="neon">
-            </div>
+            </div> -->
             <div class="img-coin">
                 <img src="images/coin.png" alt="coin">
             </div>
             <div class="img-shadowCenter">
                 <img src="images/shadowCenter.png" alt="shadowCenter">
+            </div>
+            <div class="shadow-modal">
+                <div class="shadow-modal__wrap">
+                    <div class="modal">
+                        <div class="modal__title">ПРАВИЛА И УСЛОВИЯ БОНУСА</div>
+                        <div class="modal__wrap">
+                            <div class="modal__content">
+                                <div><span>1.</span>Бонусное предложение доступно для новых клиентов компании «БК kingo.bingo», которые зарегистрировались с по _.</div>
+                                <div>Бонусное предложение доступно для следующих валют: EUR, USD, RUB, BYN, UAH, KZT, INR, IDR, THB, VND, TRY, PLN, BDT, KHR, KRW, MYR, BND, SGD, PKR, UZS, KES, UGX, GHS, TZS, XAF, NGN, CFA, XOF, AZN, IRR, CZK, BRL, PHP, AMD, GEL, RWF, MDL, KGS, TJS, NOK.</div>
+                                <div><span>2.</span>Чтобы принять участие в Акции, необходимо выбрать желаемый бонус (на спорт или казино) в момент регистрации, затем пополнить свой счет одним платежом на сумму больше чем: 500 RUB / 150 UAH / 15 BYN / 45 000 UZS / 1800 KZT /15 AZN /500 KGS / 10 USD / 10 EUR в течение 7 дней с момента регистрации.</div>
+                                <div><span>3.</span>Размер стандартного бонуса составляет 100% от суммы внесенного депозита. Например, клиент N внес депозит 1000 RUB на следующий день после регистрации. Размер бонуса составит 100%, т.е. 1000 RUB.</div>
+                                <div><span>4.</span>Максимальная сумма бонуса составляет: 25 000 RUB / 9000 UAH / 800 BYN / 3.000.000 UZS / 140 000 KZT /550 AZN /25 000 KGS /300 USD / 300 EUR.</div>
+                                <div><span>5.</span>В акции участвует только первый депозит (акционный). Бонусные средства будут зачислены на бонусный баланс в течение 72 часов с момента акционного депозита.</div>
+                                <div><span>6.</span>Бонус "первый депозит": для успешной конвертации бонусных средств в реальные и вывода их с игрового счета, необходимо в течение 30 дней после внесения первого депозита выполнить условия: сделать ставки с коэффициентом не менее 1,8 на сумму, превышающую (равную) пятикратный (пятикратному) размер (размеру) своего первого пополнения игрового счета в ставках типа “экспресс”, “система” или в одиночной ставке. Если игрок не успел выполнить условия акции в течение указанного срока, бонусный баланс аннулируется.</div>
+                                <div>Ставки на TV-игры, Live-лотереи, Cash Out в предложении не участвуют.</div>
+                                <div><span>7.</span>Бонус "Казино": для успешной конвертации бонусных средств в реальные и вывода их с игрового счета, необходимо обернуть сумму полученного бонуса х50 в разделах "Казино" "Live-games" и "Виртуальный спорт", в течение 72 часов после внесения первого депозита. Обратите внимание на то, что не во всех играх сумма ставки учитывается полностью при отыгрыше бонуса. Например в разделах "Live-Games" и "Виртуальный спорт" учитывается 10% от ставки. Список доступных игр может различаться на сайте и в мобильной версии, а так же может быть изменен в любое время.</div>
+                                <div><span>8.</span>Выигрыш по фриспинам начисляется на отдельный бонусный счет казино. Для конвертации денежных средств в реальные необходимо обернуть сумму полученного бонуса х60 в разделах "Казино" "Live-games" и "Виртуальный спорт", в течение 24 часов после создания бонусного счета. Максимальная общая сумма выигрыша с фриспинов распределена в равных долях и за 5 дней составляет 10000 RUB / 3500 UAH / 500 BYN / 1250 000 UZS / 50000 KZT /250 AZN /10000 KGS / 50 USD / 50 EUR.</div>
+                                <div class="comment">* Если у игрока есть средства и на реальном, и на бонусном балансе, то все ставки в первую очередь совершаются со средств на реальном балансе. Реальные средства используются для ставок до тех пор, пока реальный баланс не станет равен 0. Средства с бонусного баланса будут использованы для ставок только в том случае, если реальный баланс равен 0 .</div>
+                                <div class="comment">* Бонус считается отыгранным, если выполнены условия отыгрыша. Ставки, которые не соответствуют условиям, перечисленным в пунктах 6 и 7 настоящих правил, не учитываются при отыгрыше бонусных средств.</div>
+                                <div class="comment">Ставки, рассчитанные более чем через 30 дней (спорт) и 72 часа (казино) после активации бонусного предложения, не учитываются. Все ставки должны быть рассчитаны на момент завершения срока активности бонуса.</div>
+                                <div class="comment">* Пока есть хоть один открытый бонусный счет, игрок может вывести сумму от 0 до общей суммы отыгранных депозитов, если на игровом балансе останется не менее двукратного номинала бонуса. Успешным выводом считается переход заявки на вывод средств в статус "Выполнен". 12. Вывод средств с нарушением условий настоящего пункта правил, будет расценен как отказ игрока от участия в Акции, в данном случае бонусный баланс аннулируется. Настоящее правило имеет силу с момента создания бонусного счета и вплоть до появления суммы бонуса на игровом счете. </div>
+                                <div class="comment">* Бонусным предложением можно воспользоваться только один раз. Будьте внимательны при выборе бонуса во время регистрации. Выбрав один из вариантов (на спорт или казино), вы автоматически отказываетесь от второго. В дальнейшем свой выбор изменить нельзя. </div>
+                                <div class="comment">* Бонусные средства, начисленные на счет клиента, могут быть использованы на любых продуктах компании после перевода на реальный игровой счет.</div>
+                                <div class="comment">6.	Активировав бонус при регистрации, клиент автоматически соглашается с правилами и условиями этого акционного предложения. </div>
+                                <div class="comment">* Возможность отказаться от бонусных средств присутствует только на стадии регистрации, при активации бонусного предложения или при несоблюдении условий отыгрыша.</div>
+                                <div class="comment">* Бонус доступен только для одного игрового счета на человека, семью, квартиру, компьютер или IP-адрес. При возникновении подозрений в нарушении правил путем множественных регистраций (поддельные счета, игровые группы) «БК kingo.bingo» аннулирует бонус. В случае регистрации второй учетной записи, она будет удалена, а все игровые бонусы и выигрыши могут быть аннулированы.</div>
+                                <div class="comment">* Компания оставляет за собой право аннулировать бонус и/или отказать клиенту в его предоставлении без объяснения причин в случае, если во время проверки игрового счета будет выявлено нарушения честности игры и/или применении стратегий, которые, по своему усмотрению, считает злоумышленными. Списание бонусных средств возможно в любое время без предварительного уведомление клиента, но не после вывода и/или отыгрыша данного бонусного начисления. В спорных ситуациях решение уполномоченных должностных лиц Компании является окончательным.</div>
+                                <div class="comment">* Компания оставляет за собой право провести процедуру верификации владельца игрового счета, а также, приостановить начисление бонусных средств на игровом счете на время проведения процедуры верификации.</div>
+                                <div class="comment">* В случае подозрения должностными лицами компании клиента в нечестной игре, компания «БК kingo.bingo» оставляет за собой право применить к данной категории клиентов индивидуальные условия отыгрыша полученного бонуса.</div>
+                                <div class="comment">Настоящие условия могут быть изменены и дополнены как в период проведения Акции, так и в любое другое время.</div>
+                            </div>
+                        </div>
+                        <span class="modal__close"><img src="images/close.svg" alt=""></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

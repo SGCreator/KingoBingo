@@ -131,6 +131,122 @@ body {
   margin-right: 7px;
 }
 
+.shadow-modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: 0.3s ease;
+}
+
+.shadow-modal.show {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s ease;
+}
+
+.shadow-modal__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px 15px;
+  box-sizing: border-box;
+}
+
+.modal {
+  transform: scale(0);
+  transition: 0.4s ease transform;
+  flex: 0 1 1010px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 16px;
+  position: relative;
+  padding: 24px 20px;
+}
+
+.modal__title {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 14px;
+}
+
+.modal__wrap {
+  height: 695px;
+  overflow-y: auto;
+}
+
+.modal__wrap::-webkit-scrollbar {
+  width: 7px;
+}
+
+.modal__wrap::-webkit-scrollbar-track {
+  background: #EDEDED;
+  border-radius: 30px;
+}
+
+.modal__wrap::-webkit-scrollbar-thumb {
+  background: #00B0D6;
+  border-radius: 30px;
+}
+
+.modal__content {
+  color: #222;
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 25px;
+}
+
+.modal__content div {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.modal__content div:last-child {
+  margin: 0;
+}
+
+.modal__content span {
+  color: #D97EF4;
+  font-weight: 900;
+  margin-right: 4px;
+}
+
+.modal__close {
+  display: block;
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  width: 21px;
+  height: 21px;
+  border-radius: 100%;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal.show {
+  transform: scale(1);
+  transition: 0.4s ease transform;
+}
+
+.comment {
+  color: #6D9FBD;
+}
+
 /**
  * Сброс стилей
  **/
@@ -200,6 +316,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .fullscreen-block {
   min-height: 100vh;
   position: relative;
+  padding-bottom: 100px;
+  box-sizing: border-box;
 }
 
 .header {
@@ -222,7 +340,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 
 .header-logoSelect__logo {
-  flex: 0 1 142px;
+  flex: 0 0 142px;
   min-height: 95px;
   margin-right: 60px;
 }
@@ -283,12 +401,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 
 .header-logoSelect-label__img {
-  width: 20px;
-  height: 20px;
-}
-
-.header-logoSelect-label__img img {
-  max-width: 100%;
+  width: 21px;
+  height: 21px;
+  overflow: hidden;
 }
 
 .header-logoSelect-label--brNo.header-logoSelect-label::after {
@@ -487,6 +602,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 
 .block-content-rules-left-slider__iconArr {
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -576,6 +692,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 .block-content-rules-left-slider__arrRight span {
   transform: rotate(90deg) translate(7%, -15%);
+}
+
+.block-content-rules-left-slider__reg {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.block-content-rules-left-slider__reg span {
+  color: #D97EF4;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #D97EF4;
+}
+
+.block-content-rules-left-slider__paginationList {
+  display: flex;
+  align-items: center;
+}
+
+.block-content-rules-left-slider__paginationLink {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 100%;
+  margin-right: 22px;
+}
+
+.block-content-rules-left-slider__paginationLink:last-child {
+  margin: 0;
+}
+
+.block-content-rules-left-slider__paginationLink.active {
+  background-color: #000;
+  width: 8px;
+  height: 8px;
+  border: 4px solid #fff;
 }
 
 .block-content-rules-right {
