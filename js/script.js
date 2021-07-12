@@ -57,6 +57,10 @@ modal('.shadow-modal','.block-content-rules-ruleBtn','.modal__close','.modal');
         nextEl:'.block-content-rules-left-slider__arrRight',
         prevEl:'.block-content-rules-left-slider__arrLeft'
     },
-    spaceBetween:120,
+    pagination:{
+        el: '.block-content-rules-left-slider__dottList',
+        clickable:true,
+    },
+    spaceBetween:200,
 });
 })
